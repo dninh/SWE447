@@ -1,5 +1,4 @@
 (function () {
-
     var allCubes = [];
     var lastCube;
     var isMoving = false;
@@ -14,7 +13,6 @@
     var activeGroup = [];
 
     function init() {
-
         var canvas = $("#scene").empty();
         var width = canvas.innerWidth();
         var height = canvas.innerHeight();
@@ -33,7 +31,7 @@
 
         createCubes();
         bindEvents();
-        $("#button-mix").on('click', mixCube);
+        $("#scramble").on('click', mixCube);
     }
 	
 	var configuration = {
@@ -96,7 +94,6 @@
         var offset = (configuration.cubeSize / 2) + 0.1;
         var increment = configuration.cubeSize + configuration.spacing;
 
-
         if (this.x == increment)
             newPlane(this.cube, this.x + offset, this.y, this.z, configuration.colours[0], this.y, 90);
         if (this.x == -increment)
@@ -141,8 +138,6 @@
             }
         }
     }
-
-
 
     // CUBE MOVES
 	
@@ -341,4 +336,3 @@
     });
 
 }());
-
