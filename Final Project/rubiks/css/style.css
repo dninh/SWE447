@@ -1,0 +1,25 @@
+html, body {
+	height: 100%;
+}
+
+#scene { 
+	height: 100%;
+}
+
+button {
+	font-size: 15px;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+button:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
